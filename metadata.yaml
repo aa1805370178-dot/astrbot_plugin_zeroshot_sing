@@ -1,0 +1,20 @@
+name: astrbot_plugin_zeroshot_sing
+display_name: 零样本学唱歌（让 AI 自己学会新歌）
+short_desc: 零样本换声，点歌后自己去找原唱、自己学会，用你给的音色唱副歌发语音；4G 显卡能跑
+desc: |
+  给机器人一个 sing 工具。有人让它唱歌时：会唱就用你配置的音色唱副歌（或整首），以语音发出来；
+  不会就自己去 QQ 音乐定原唱、到 B 站找对得上的版本、分离人声伴奏，学会后再点一次就能唱。
+  零样本换声：只要一段 10–25 秒的干净录音当音色，不用训练；GTX 1650 Ti 4G 显卡也能跑。
+  需要另外装好并运行 qqbot-music 唱歌服务（https://github.com/aa1805370178-dot/qqbot-music）。
+version: 1.0.0
+author: 小小墨
+repo: https://github.com/aa1805370178-dot/astrbot_plugin_zeroshot_sing
+social_link: https://github.com/aa1805370178-dot/qqbot-music
+tags:
+  - 唱歌
+  - 语音
+  - 音乐
+  - AI翻唱
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.5.1"

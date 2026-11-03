@@ -1,0 +1,39 @@
+{
+  "url": {
+    "description": "qqbot-music 唱歌服务地址",
+    "type": "string",
+    "default": "http://127.0.0.1:8766"
+  },
+  "start_command": {
+    "description": "服务没开时用来启动它的命令",
+    "type": "string",
+    "default": "",
+    "hint": "留空就不自动启动，要你自己先开服务。例：D:/xxx/seed-vc/env/Scripts/python.exe -m qqbot_music serve"
+  },
+  "start_cwd": {
+    "description": "启动命令的工作目录（qqbot-music 目录）",
+    "type": "string",
+    "default": ""
+  },
+  "start_seconds": {
+    "description": "等服务启动的最长秒数",
+    "type": "int",
+    "default": 120
+  },
+  "allow_full": {
+    "description": "是否允许唱整首",
+    "type": "bool",
+    "default": true,
+    "hint": "整首要好几分钟，期间别人点歌要排队"
+  },
+  "chorus_timeout": {
+    "description": "唱副歌的超时秒数（从排到这首开始算）",
+    "type": "int",
+    "default": 1200
+  },
+  "full_timeout": {
+    "description": "唱整首的超时秒数（从排到这首开始算）",
+    "type": "int",
+    "default": 3600
+  }
+}
